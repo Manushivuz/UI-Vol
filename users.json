@@ -1,0 +1,34 @@
+[
+  {
+    "username": "somethin",
+    "password": "$2a$10$NVRAbVQFVynuHh/vO5.ZV.ppHAbnRamMfb.scoPgU4hBoIsCPhZPG"
+  },
+  {
+    "username": "something",
+    "password": "$2a$10$c/17sVNfk77hEbQPIcAdQelXP/P3IaU5UTuQx2CHeeEeb7ryQJYwq"
+  },
+  {
+    "username": "man",
+    "password": "$2a$10$N/LZMa0oAurA6ILUDvZFnO46fAXRayU4R9/7XXBqT3E/Sy.pv9P.e"
+  },
+  {
+    "username": "go",
+    "password": "$2a$10$B7dgD8lz.AzAZoKbE7cioenV./anW2ffTON5IdVuEFrrkSHoLxNw2"
+  },
+  {
+    "username": "am",
+    "password": "$2a$10$nCL1fTlkGtE6Gi81RIKzfObgzVu/AL721HB7iddTdeRjPGb5IAAIK"
+  },
+  {
+    "username": "ja",
+    "password": "$2a$10$DKot3Ez2.6jfFCF2FSSRJe1oHo4VyuOaLJkfAabAKB9VG8or4E4HO"
+  },
+  {
+    "username": "hosad",
+    "password": "$2a$10$g10ml.pIReV3mJtSf1J25.gFeXq/KmEDh/hDgiVX3rFeqiRLIYVKK"
+  },
+  {
+    "username": "jayz",
+    "password": "$2a$10$A4vYv47/xU7MzjstjNBmcOUC0yqp/clTOWINVuIy13cDuyGEFQ3UK"
+  }
+]

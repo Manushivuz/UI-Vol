@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analysis Status</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="process.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="/home">Home</a></li>
+            <li><a href="/analysis.html">Memory Analysis</a></li>
+            <li><a href="/logout">Logout</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Analysis Status</h1>
+        <p id="status">Checking analysis status...</p>
+    </main>
+    <script>
+        const params = new URLSearchParams(window.location.search);
+        const analysisId = params.get('analysisId');
+
+        function checkStatus() {
+            fetch(`/api/analysis/${analysisId}/status`)
+                .then(response => response.json())
+                .then(data => {
+                    document.getElementById('status').textContent = `Status: ${data.status}`;
+                    if (data.status === 'completed') {
+                        window.location.href = '/results1.html';
+                    } else if (data.status === 'failed') {
+                        document.getElementById('status').textContent = 'Analysis failed. Please try again.';
+                    } else {
+                        setTimeout(checkStatus, 3000); // Check status every 3 seconds
+                    }
+                })
+                .catch(error => console.error('Error checking status:', error));
+        }
+
+        checkStatus();
+    </script>
+</body>
+</html>

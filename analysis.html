@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Analysis</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="analysis.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/signup.html">Sign Up</a></li>
+                <li><a href="/login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Memory Analysis</h1>
+        <form action="/analyze" method="POST" enctype="multipart/form-data">
+            <label for="memoryDump">Upload Memory Dump:</label>
+            <input type="file" id="memoryDump" name="memoryDump" accept=".dump" required><br><br>
+            <label for="plugin">Select Plugin:</label>
+            <select id="plugin" name="plugin">
+                <option value="pslist">PS List</option>
+                <option value="pstree">PS Tree</option>
+                <option value="network">Network Analysis</option>
+                <option value="registry">Registry Analysis</option>
+                <option value="dll">DLL Analysis</option>
+            </select><br><br>
+            <button type="submit">Analyze</button>
+        </form>
+    </main>
+</body>
+</html>

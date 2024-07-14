@@ -1,0 +1,102 @@
+/* styles.css */
+
+/* Reset some default styles for better consistency across browsers */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #67efa2 0%, #4facd7 ,#473ef3);
+    color: #333;
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+nav {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 1rem 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #a1c4fd;
+}
+
+main {
+    width: 1200px;
+    max-width: 90%;  /* Ensures the main container scales down on smaller screens */
+    margin: 5rem auto 2rem auto;
+    padding: 2rem;
+    background:linear-gradient(120deg,#677ce5,#e75ce2);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    text-align: center;
+    backdrop-filter: blur(10px);
+}
+
+h1 {
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+    color: #333;
+}
+
+p {
+    width: 90%;  /* Paragraph width */
+    max-width: 800px;  /* Maximum width of the paragraph */
+    margin: 0 auto 1rem auto;  /* Center the paragraph and add margin to the bottom */
+    font-size: 1.2rem;
+    color: #666;
+    background: rgba(255, 255, 255, 0.8);  /* Semi-transparent background */
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+pre {
+    text-align: left;
+    background-color: #f4f4f4;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow-x: auto;
+    max-height: 400px;
+}
+
+.button {
+    top: 2%;
+    border: 2px solid black;
+    position: absolute;
+    background-color: deepskyblue;
+    text-decoration: none;
+    color: black;
+    border-radius: 7px;
+    width: 99px;
+    left: 91%;
+}

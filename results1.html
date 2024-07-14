@@ -1,0 +1,64 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full Analysis Results</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="/home">Home</a></li>
+            <li><a href="/analysis.html">Memory Analysis</a></li>
+            <li><a href="/logout">Logout</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Full Analysis Results</h1>
+        <pre id="fullAnalysisResults">Loading full results...</pre>
+    </main>
+    <script>
+        fetch('/getFullResults')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('fullAnalysisResults').textContent = data.trim();
+            })
+            .catch(error => console.error('Error fetching full results:', error));
+    </script>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full Analysis Results</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="result.css">
+
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="/home">Home</a></li>
+            <li><a href="/analysis.html">Memory Analysis</a></li>
+            <li><a href="/logout">Logout</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Full Analysis Results</h1>
+        <pre id="fullAnalysisResults">Loading full results...</pre>
+        <a href="/downloadResults" class="button">Download Results</a>
+    </main>
+    <script>
+        fetch('/getFullResults')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('fullAnalysisResults').textContent = data.trim();
+            })
+            .catch(error => console.error('Error fetching full results:', error));
+    </script>
+</body>
+</html>
